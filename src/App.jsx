@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { PageSelectSet } from "./components/PageSelectSet";
 import { PageViewSet } from "./components/PageViewSet";
@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path="/" element={<PageSelectSet />} />
@@ -20,7 +20,7 @@ function App() {
         </Route>
         <Route path="*" element={<h2>404 — Страница не найдена</h2>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
