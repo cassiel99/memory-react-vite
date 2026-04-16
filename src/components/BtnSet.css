@@ -1,0 +1,16 @@
+.btn-set {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-set:hover {
+    background-color: royalblue;
+}
